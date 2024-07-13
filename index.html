@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cenário Procedural</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+    
+    <div class="controls">
+        <div class="control">
+            <label for="tree-count">Árvores: </label>
+            <input type="range" id="tree-count" min="0" max="20" value="10">
+            <span id="tree-value">10</span>
+        </div>
+        <div class="control">
+            <label for="rock-count">Rochas: </label>
+            <input type="range" id="rock-count" min="0" max="20" value="8">
+            <span id="rock-value">8</span>
+        </div>
+        <div class="control">
+            <label for="house-count">Casas: </label>
+            <input type="range" id="house-count" min="0" max="10" value="3">
+            <span id="house-value">3</span>
+        </div>
+        <div class="control">
+            <label for="bench-count">Bancos: </label>
+            <input type="range" id="bench-count" min="0" max="10" value="5">
+            <span id="bench-value">5</span>
+        </div>
+        <div class="control">
+            <label for="lamp-count">Lampiões: </label>
+            <input type="range" id="lamp-count" min="0" max="10" value="5">
+            <span id="lamp-value">5</span>
+        </div>
+    </div>
+
+    <button id="generate-button">Gerar Novo Cenário</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/OBJLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

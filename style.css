@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#webgl-canvas {
+    width: 80%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.control label {
+    margin-right: 10px;
+}
